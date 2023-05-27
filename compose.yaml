@@ -1,0 +1,9 @@
+version: '1'
+services:
+  password-manager:
+    image: password-manager:1.0
+    container_name: password
+    build:
+      context: app
+    volumes:
+      - ./app:/app
